@@ -1,3 +1,6 @@
+**go to runtime option at the top in toolbar, select 'change runtime type', then in "hardware accelator" slect GPU, then save** 
+
+
 STEP 1:
 !nvcc --version
 
