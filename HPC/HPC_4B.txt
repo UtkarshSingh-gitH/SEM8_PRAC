@@ -1,3 +1,8 @@
+STEP 1:
+!nvcc --version
+
+STEP 2:
+code = """
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -62,3 +67,15 @@ int main() {
 
     return 0;
 }
+"""
+
+STEP 3:
+text_file = open("assign1.cu", "w")
+text_file.write(code)
+text_file.close()
+
+STEP 4:
+!nvcc assign1.cu
+
+STEP 5:
+!./a.out
